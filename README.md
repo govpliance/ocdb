@@ -10,6 +10,16 @@
   * point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 ## Developer Setup
+| | Fedora | OSX |
+|:-|:-|:-|
+| Install Golang and Libxml2 | `dnf install golang libxml2-devel` | `brew install golang libxml2 libxslt` |
+| Aquire ocdb | `go get -u -v github.com/govpliance/ocdb` | `git clone git@github.com:govpliance/ocdb.git` |
+| Change dir to source | `cd ~/go/src/github.com/Govpliance/ocdb` | `cd ocdb` |
+| Aquire buffalo tool | `go get -v github.com/gobuffalo/buffalo/buffalo` | `brew install gobuffalo/tap/buffalo` |
+| Build front-end pipeline | `dnf install -y npm && npm install -g yarn && yarn install` | `brew install npm && npm install -g yarn && yarn install` |
+| Run server | `buffalo dev` | `buffalo dev` |
+| View app | [http://127.0.0.1:3000](http://127.0.0.1:3000) | [http://127.0.0.1:3000](http://127.0.0.1:3000) |
+
 
   * install golang `dnf install golang libxml2-devel`
   * acquire ocdb - `go get -u -v github.com/RedHatGov/ocdb`
